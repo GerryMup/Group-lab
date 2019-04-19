@@ -10,4 +10,8 @@ mainRouter.get('/about', function (req, res) {
   res.sendFile(path.join(__dirname, 'views', 'about.html'))
 })
 
+mainRouter.get('/about', function (req, res) {
+  res.sendFile(path.join(__dirname, 'index.html'))
+})
+
 module.exports = mainRouter
