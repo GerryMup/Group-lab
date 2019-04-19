@@ -3,14 +3,14 @@ let express = require('express')
 let mainRouter = express.Router()
 
 mainRouter.get('/', function (req, res) {
-  res.send('Hello World, I\'m Node.js')
+  res.send('First Page')
 })
 
 mainRouter.get('/about', function (req, res) {
   res.sendFile(path.join(__dirname, 'views', 'about.html'))
 })
 
-mainRouter.get('/about', function (req, res) {
+mainRouter.get('/index', function (req, res) {
   res.sendFile(path.join(__dirname, 'index.html'))
 })
 
