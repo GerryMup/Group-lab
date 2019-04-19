@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document*/
+
+body{
+    margin:0;
+    padding:0;
+}
+
+.banner{
+    background: url(images/paris.jpg) no-repeat center;
+    background-size: cover;
+    height:100vh;
+}
