@@ -82,17 +82,21 @@ header{
 @media(max-width:992px){
     .navbar-toggler{
         margin: 10px 0px 10px 30px;
-        border-color: greenyellow;
+        background-color:greenyellow;
+    }
+    .navbar-toggler:hover, .navbar-toggler:hover{
+        background-color: #fff;
+        border-color: blueviolet;
     }
     .navbar-light{
-        background-color:wheat;
+        background-color:#fff;
     }
     .navbar-nav li a{
         text-align: center;
         background-color: aliceblue; 
     }
-    .navbar li a{
-        background-color: blanchedalmond; 
+    .navbar li a:hover{
+        background-color:greenyellow; 
     }
 
 }
