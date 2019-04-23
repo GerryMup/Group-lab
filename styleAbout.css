@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Document*/
+
+body{
+    margin:0;
+    padding:0;
+}
+
+.banner{
+    background: url(images/bali.png) no-repeat center;
+    background-size: cover;
+    height:100vh;
+}
+
+header{
+    padding: 5px 30px 0px;
+    background-color: rgba(255,255,255, 0.4);
+}
+
+.plane-icon{
+    display:inline-block;
+}
+
+.title-color{
+    text-transform: uppercase;
+    color: black;
+}
+
+.my-search{
+    float: right;
+    border: 3px #000 solid;
+}
+
+.search1{
+    border:none;
+    background-color:none;
+    width: 150px;
+    background-color: transparent;
+}
+
+.button1{
+    color: blueviolet;
+    background-color: #000;
+    border: none;
+    height:40px;
+    width:40px;
+}
+
+.navigation-bar{
+    background-color: rgba(255,255,255, 0.4)
+}
+
+.navbar{
+    padding: 0px;
+}
+
+.navbar-nav li{
+    z-index:1;
+}
+
+.navbar-nav a{
+    font-size: 17px;
+    padding: 15px 60px!important;
+}
+
+.navbar-nav li a:hover{
+    border-right: 3px solid greenyellow;
+    border-left:  3px solid greenyellow;
+    transition: 0.5s all;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: black;
+}
+
+@media(max-width:1200px){
+    .navbar-nav li{
+        font-size: 15px;
+    }
+}
+
+@media(max-width:992px){
+    .navbar-toggler{
+        margin: 10px 0px 10px 30px;
+        background-color:greenyellow;
+    }
+    .navbar-toggler:hover, .navbar-toggler:hover{
+        background-color: #fff;
+        border-color: blueviolet;
+    }
+    .navbar-light{
+        background-color:#fff;
+    }
+    .navbar-nav li a{
+        text-align: center;
+        background-color: aliceblue; 
+    }
+    .navbar li a:hover{
+        background-color:greenyellow; 
+    }
+
+}
