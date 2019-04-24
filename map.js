@@ -51,3 +51,9 @@ for (index in itenary) {
 
 // let marker = L.marker([55, 22]).addTo(mymap)
 // markers.push(marker)
+
+for (index in itenary) {
+  let marker = L.marker([itenary[index].lattitude, itenary[index].longnitude]).addTo(mymap)
+  markers.push(marker)
+}
+
