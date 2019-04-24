@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset utf=8"/>
+        <title>Login page</title>
+        <link href="login.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="verifyCredentials.js"></script>
+    </head>
+
+    <body oncontextmenu="return false">
+        <div class="sign-in">
+            <form>
+                <h2>Log in</h2>
+                <input type="text" name="username" placeholder="Username">
+                <input type="password" name="pass" placeholder="Password"><br><br>
+                <input type="button" value="Log in" onclick="verifyCredentials(this.form)">
+                <div id="container">
+                    <br>
+                    <a href="passReset.html">Reset Password &nbsp; &nbsp;</a>
+                    <a href="passForgot.html">Forgot Password?</a>
+                    </div><br><br><br>
+                    Don't have an account? <a href="signup.html">&nbsp;Sign Up</a>
+                </div> 
+            </form>
+        </div>
+    </body>
+</html>

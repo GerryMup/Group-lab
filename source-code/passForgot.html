@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset utf=8"/>
+        <title>Forgot Password</title>
+
+        <link href="passForgot.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body oncontextmenu="return false">
+        <div class="forgot">
+            <form>
+                <h2>Reset Password</h2>
+                <div>Enter your e-mail address to receive a link for resetting your password</div><br><br>
+                <input type="text" name="email" placeholder="e-mail adress"><br><br>
+                <input type="button" value="Send e-mail link" onclick="emailPassword()"><br><br>
+                <a href="login.html">Go back to log in page</a>
+                <div id="e-message">Check your email to reset your password</div>
+
+                <script>
+                    function emailPassword() {
+                        var x = document.getElementById("e-message");
+                        x.className = "show";
+                        setTimeout(function(){
+                        x.className = x.className.replace("show",""); }, 3000);
+                }
+                </script>
+            </form>
+        </div>
+
+    </body>
+</html>

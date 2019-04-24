@@ -16,10 +16,11 @@ mainRouter.get('/database', function (req, res) {
     .then((pool) => {
       return pool.request()
       // This is only a test query, change it to whatever you need
-        .query('SELECT 1')
+        .query('SELECT * FROM Persons')
     })
   // Send back the result
     .then(result => {
+      console.log(result)
       res.send(result)
     })
   // If there's an error, return that with some description

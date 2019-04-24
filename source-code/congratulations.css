@@ -1,0 +1,40 @@
+body{
+    
+    background: url(images/somewhere2.jpg);
+    background-size: cover;
+}
+
+h2{
+    color: white;
+    font-size:30px;
+}
+
+a{
+    margin-right:0px; 
+    font-size: 17px;
+    color:rgb(83, 229, 240);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: blink;
+}
+
+a:hover{
+    color: yellow;
+}
+
+
+.congr{
+    text-align: center; 
+    background: rgba(44,62,80,0.7);
+    padding: 40px;
+    margin-top: 80px;
+    height: 200px;
+    margin-left: 180px;
+    margin: 0 auto;
+    margin-top: 120px;
+    width: 300px;
+}
+
+form{
+    width: 300px;
+    text-align: center;
+}
