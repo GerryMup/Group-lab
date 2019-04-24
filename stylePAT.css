@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document*/
+
+body{
+    margin:0;
+    padding:0;
+    position: relative;
+}
+
+/* General Button Styling */
+.buttons:hover{
+    background: green;
+    color: white;
+}
+
+/* Form Styling */
+.plan_a_trip_form{
+
+    padding: 30px;
+    width: 65%;
+    margin: auto;
+    background: rgba(255,255,255, 0.4);
+    position: absolute;
+    top: 175px;
+    left: 100px;
+}
+
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.form_group {
+    padding-bottom: 3%;
+}
+
+.form_group input{
+    width: 20%;
+}
