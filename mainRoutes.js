@@ -15,7 +15,7 @@ mainRouter.get('/index', function (req, res) {
 })
 
 mainRouter.get('/signup', function (req, res) {
-  res.sendFile(path.join(__dirname, 'signup.html'))
+  res.sendFile(path.join(__dirname, 'source-code', 'signup.html'))
 })
 
 module.exports = mainRouter
