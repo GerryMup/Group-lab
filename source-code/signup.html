@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset utf=8"/>
+        <title>Sign Up</title>
+
+        <link href="signup.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body oncontextmenu="return false">
+        <div class="sign-up">
+            <form  action="newUser.php" method="post">
+                <h2>Sign Up</h2>
+                <input type="text" name="username" placeholder="Fist name">
+                <br><br>
+                <input type="text" name="sirname" placeholder="Last name">
+                <br><br>
+                <input type="password" name="pass" placeholder="Password">
+                <br><br>
+                <input type="password" name="pass" placeholder="Confirm Password">
+                <br><br>
+                <input type="text" name="email" placeholder="Email address">
+                <br><br>
+               <input type="button" value="Sign Up">
+
+            </form>
+
+            <br>
+            <div id="message">You have succesfully signed up</div>
+
+            <script>
+            function signUpSuccess() {
+                var x = document.getElementById("message");
+                x.className = "show";
+                setTimeout(function(){
+                    x.className = x.className.replace("show",""); }, 3000);
+            }
+            </script>
+            Already have an account?<a href="login.html">&nbsp;Log in</a>
+        </div>
+
+    </body>
+</html>
