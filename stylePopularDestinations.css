@@ -22,15 +22,63 @@ header{
   }
   
   /* Bottom right text */
-  .text-block {
+.text-block {
+   position: absolute;
+   bottom: 12px;
+   left: -10%;
+   background-color:rgba(0, 0, 0, 0.500);
+   color: white;
+   padding-top: 1%;
+   padding-left: 5%;
+   padding-right: 5%;
+   padding-bottom: 1%;
+ }
+
+ .column {
+    float: left;
+    width: 30%;
+    padding: 2%;
+    position: relative;
+    /*text-align: center;*/
+    color: rgb(0, 0, 0);
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+ 
+  /* Centered text */
+  .centered1 {
     position: absolute;
-    bottom: 200px;
-    left: -50px;
+    top: 65%;
+    left: 7.5%;
     background-color:rgba(0, 0, 0, 0.500);
     color: white;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .centered2 {
+    position: absolute;
+    top: 65%;
+    left: -92%;
+    background-color:rgba(0, 0, 0, 0.500);
+    color: white;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .centered3 {
+    position: absolute;
+    top: 65%;
+    left: -192%;
+    background-color:rgba(0, 0, 0, 0.500);
+    color: white;
+    padding-left: 2%;
+    padding-right: 2%;
   }
 
 .plane-icon{
